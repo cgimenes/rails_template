@@ -35,7 +35,6 @@ require 'fileutils'
 rails_root = File.expand_path('../../', __FILE__)
 
 %w(
-  config/database.sample.yml
   config/secrets.sample.yml
 ).each do |file|
   source = "#{rails_root}/#{file}"

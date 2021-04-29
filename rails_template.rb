@@ -77,7 +77,7 @@ production:
   <<: *dev
 YML
 
-run 'rm config/secrets.yml && bin/copy_samples'
+run 'bin/copy_samples'
 
 ### RSpec
 

@@ -55,7 +55,6 @@ run 'echo "config/secrets.yml" >> .gitignore'
 
 file 'config/secrets.sample.yml', <<-YML
 development: &dev
-  secret_key_base: #{run 'rails secret', capture: true}
   telegram:
     bot:
       token: BOT_TOKEN
@@ -66,7 +65,6 @@ development: &dev
       #   # async: true
 
 test:
-  secret_key_base: #{run 'rails secret', capture: true}
   telegram:
     bot:
       token: test_bot_token
